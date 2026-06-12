@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1441" height="267" viewBox="0 0 1441 267" font-family="Menlo, 'SF Mono', monospace">
+<rect x="0" y="0" width="1441" height="267" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<circle cx="26" cy="24" r="7" fill="#ff5f56"/>
+<circle cx="48" cy="24" r="7" fill="#ffbd2e"/>
+<circle cx="70" cy="24" r="7" fill="#27c93f"/>
+<text x="720.5" y="29" fill="#6e7681" font-size="14" text-anchor="middle">claude-statusline</text>
+<text y="96.3" font-size="26.0" xml:space="preserve">
+<tspan x="34.0" fill="#d59425">▌</tspan>
+<tspan x="65.2" fill="#56b6c2" font-weight="700">O</tspan>
+<tspan x="80.8" fill="#56b6c2" font-weight="700">p</tspan>
+<tspan x="96.4" fill="#56b6c2" font-weight="700">u</tspan>
+<tspan x="112.0" fill="#56b6c2" font-weight="700">s</tspan>
+<tspan x="143.2" fill="#56b6c2" font-weight="700">4</tspan>
+<tspan x="158.8" fill="#56b6c2" font-weight="700">.</tspan>
+<tspan x="174.4" fill="#56b6c2" font-weight="700">8</tspan>
+<tspan x="205.6" fill="#6e7681">·</tspan>
+<tspan x="236.8" fill="#6e7681">2</tspan>
+<tspan x="252.4" fill="#6e7681">0</tspan>
+<tspan x="268.0" fill="#6e7681">0</tspan>
+<tspan x="283.6" fill="#6e7681">k</tspan>
+<tspan x="314.8" fill="#6e7681">c</tspan>
+<tspan x="330.4" fill="#6e7681">t</tspan>
+<tspan x="346.0" fill="#6e7681">x</tspan>
+<tspan x="377.2" fill="#6e7681">·</tspan>
+<tspan x="408.4" fill="#c678dd">h</tspan>
+<tspan x="424.0" fill="#c678dd">i</tspan>
+<tspan x="439.6" fill="#c678dd">g</tspan>
+<tspan x="455.2" fill="#c678dd">h</tspan>
+<tspan x="486.4" fill="#6e7681">·</tspan>
+<tspan x="517.6" fill="#6e7681">⏱</tspan>
+<tspan x="548.8" fill="#6e7681">1</tspan>
+<tspan x="564.4" fill="#6e7681">.</tspan>
+<tspan x="580.0" fill="#6e7681">5</tspan>
+<tspan x="595.6" fill="#6e7681">h</tspan>
+<tspan x="626.8" fill="#6e7681">·</tspan>
+<tspan x="658.0" fill="#6e7681">📁</tspan>
+<tspan x="704.8" fill="#c9d1d9">c</tspan>
+<tspan x="720.4" fill="#c9d1d9">l</tspan>
+<tspan x="736.0" fill="#c9d1d9">a</tspan>
+<tspan x="751.6" fill="#c9d1d9">u</tspan>
+<tspan x="767.2" fill="#c9d1d9">d</tspan>
+<tspan x="782.8" fill="#c9d1d9">e</tspan>
+<tspan x="798.4" fill="#c9d1d9">-</tspan>
+<tspan x="814.0" fill="#c9d1d9">s</tspan>
+<tspan x="829.6" fill="#c9d1d9">t</tspan>
+<tspan x="845.2" fill="#c9d1d9">a</tspan>
+<tspan x="860.8" fill="#c9d1d9">t</tspan>
+<tspan x="876.4" fill="#c9d1d9">u</tspan>
+<tspan x="892.0" fill="#c9d1d9">s</tspan>
+<tspan x="907.6" fill="#c9d1d9">l</tspan>
+<tspan x="923.2" fill="#c9d1d9">i</tspan>
+<tspan x="938.8" fill="#c9d1d9">n</tspan>
+<tspan x="954.4" fill="#c9d1d9">e</tspan>
+<tspan x="985.6" fill="#6e7681">·</tspan>
+<tspan x="1016.8" fill="#6e7681">🌿</tspan>
+<tspan x="1063.6" fill="#61afef">m</tspan>
+<tspan x="1079.2" fill="#61afef">a</tspan>
+<tspan x="1094.8" fill="#61afef">i</tspan>
+<tspan x="1110.4" fill="#61afef">n</tspan>
+<tspan x="1141.6" fill="#3fb950">+</tspan>
+<tspan x="1157.2" fill="#3fb950">3</tspan>
+<tspan x="1188.4" fill="#e5c07b">!</tspan>
+<tspan x="1204.0" fill="#e5c07b">1</tspan>
+<tspan x="1235.2" fill="#787882">?</tspan>
+<tspan x="1250.8" fill="#787882">3</tspan>
+<tspan x="1282.0" fill="#6e7681">·</tspan>
+<tspan x="1313.2" fill="#3fb950">P</tspan>
+<tspan x="1328.8" fill="#3fb950">R</tspan>
+<tspan x="1360.0" fill="#3fb950">#</tspan>
+<tspan x="1375.6" fill="#3fb950">4</tspan>
+<tspan x="1391.2" fill="#3fb950">2</tspan>
+</text>
+<text y="136.6" font-size="26.0" xml:space="preserve">
+<tspan x="34.0" fill="#d59425">▌</tspan>
+<tspan x="65.2" fill="#6e7681">c</tspan>
+<tspan x="80.8" fill="#6e7681">o</tspan>
+<tspan x="96.4" fill="#6e7681">n</tspan>
+<tspan x="112.0" fill="#6e7681">t</tspan>
+<tspan x="127.6" fill="#6e7681">e</tspan>
+<tspan x="143.2" fill="#6e7681">x</tspan>
+<tspan x="158.8" fill="#6e7681">t</tspan>
+<tspan x="190.0" fill="#5c6068">▏</tspan>
+<tspan x="205.6" fill="#4cb64c">█</tspan>
+<tspan x="221.2" fill="#67b043">█</tspan>
+<tspan x="236.8" fill="#82aa3b">█</tspan>
+<tspan x="252.4" fill="#9da533">█</tspan>
+<tspan x="268.0" fill="#b79f2a">█</tspan>
+<tspan x="283.6" fill="#d29922">▊</tspan>
+<tspan x="299.2" fill="#787882">░</tspan>
+<tspan x="314.8" fill="#787882">░</tspan>
+<tspan x="330.4" fill="#787882">░</tspan>
+<tspan x="346.0" fill="#787882">░</tspan>
+<tspan x="361.6" fill="#5c6068">▕</tspan>
+<tspan x="408.4" fill="#d59425">5</tspan>
+<tspan x="424.0" fill="#d59425">8</tspan>
+<tspan x="439.6" fill="#d59425">%</tspan>
+<tspan x="470.8" fill="#787882">~</tspan>
+<tspan x="486.4" fill="#787882">3</tspan>
+<tspan x="502.0" fill="#787882">0</tspan>
+<tspan x="517.6" fill="#787882">m</tspan>
+<tspan x="548.8" fill="#787882">l</tspan>
+<tspan x="564.4" fill="#787882">e</tspan>
+<tspan x="580.0" fill="#787882">f</tspan>
+<tspan x="595.6" fill="#787882">t</tspan>
+<tspan x="626.8" fill="#6e7681">·</tspan>
+<tspan x="658.0" fill="#6e7681">c</tspan>
+<tspan x="673.6" fill="#6e7681">o</tspan>
+<tspan x="689.2" fill="#6e7681">s</tspan>
+<tspan x="704.8" fill="#6e7681">t</tspan>
+<tspan x="736.0" fill="#3fb950">$</tspan>
+<tspan x="751.6" fill="#3fb950">4</tspan>
+<tspan x="767.2" fill="#3fb950">.</tspan>
+<tspan x="782.8" fill="#3fb950">7</tspan>
+<tspan x="798.4" fill="#3fb950">3</tspan>
+<tspan x="829.6" fill="#6e7681">~</tspan>
+<tspan x="845.2" fill="#6e7681">$</tspan>
+<tspan x="860.8" fill="#6e7681">3</tspan>
+<tspan x="876.4" fill="#6e7681">/</tspan>
+<tspan x="892.0" fill="#6e7681">h</tspan>
+<tspan x="907.6" fill="#6e7681">r</tspan>
+</text>
+<text y="176.9" font-size="26.0" xml:space="preserve">
+<tspan x="34.0" fill="#d59425">▌</tspan>
+<tspan x="65.2" fill="#6e7681">t</tspan>
+<tspan x="80.8" fill="#6e7681">o</tspan>
+<tspan x="96.4" fill="#6e7681">k</tspan>
+<tspan x="112.0" fill="#6e7681">e</tspan>
+<tspan x="127.6" fill="#6e7681">n</tspan>
+<tspan x="143.2" fill="#6e7681">s</tspan>
+<tspan x="174.4" fill="#c9d1d9" font-weight="700">1</tspan>
+<tspan x="190.0" fill="#c9d1d9" font-weight="700">2</tspan>
+<tspan x="205.6" fill="#c9d1d9" font-weight="700">4</tspan>
+<tspan x="221.2" fill="#c9d1d9" font-weight="700">.</tspan>
+<tspan x="236.8" fill="#c9d1d9" font-weight="700">2</tspan>
+<tspan x="252.4" fill="#c9d1d9" font-weight="700">k</tspan>
+<tspan x="283.6" fill="#6e7681">(</tspan>
+<tspan x="299.2" fill="#6e7681">1</tspan>
+<tspan x="314.8" fill="#6e7681">1</tspan>
+<tspan x="330.4" fill="#6e7681">6</tspan>
+<tspan x="346.0" fill="#6e7681">.</tspan>
+<tspan x="361.6" fill="#6e7681">0</tspan>
+<tspan x="377.2" fill="#6e7681">k</tspan>
+<tspan x="392.8" fill="#6e7681">↑</tspan>
+<tspan x="408.4" fill="#6e7681">/</tspan>
+<tspan x="424.0" fill="#6e7681">8</tspan>
+<tspan x="439.6" fill="#6e7681">.</tspan>
+<tspan x="455.2" fill="#6e7681">2</tspan>
+<tspan x="470.8" fill="#6e7681">k</tspan>
+<tspan x="486.4" fill="#6e7681">↓</tspan>
+<tspan x="502.0" fill="#6e7681">)</tspan>
+<tspan x="533.2" fill="#6e7681">·</tspan>
+<tspan x="564.4" fill="#6e7681">Σ</tspan>
+<tspan x="595.6" fill="#56b6c2">1</tspan>
+<tspan x="611.2" fill="#56b6c2">6</tspan>
+<tspan x="626.8" fill="#56b6c2">.</tspan>
+<tspan x="642.4" fill="#56b6c2">2</tspan>
+<tspan x="658.0" fill="#56b6c2">M</tspan>
+<tspan x="689.2" fill="#6e7681">·</tspan>
+<tspan x="720.4" fill="#3fb950">+</tspan>
+<tspan x="736.0" fill="#3fb950">2</tspan>
+<tspan x="751.6" fill="#3fb950">1</tspan>
+<tspan x="767.2" fill="#3fb950">4</tspan>
+<tspan x="798.4" fill="#f85149">-</tspan>
+<tspan x="814.0" fill="#f85149">3</tspan>
+<tspan x="829.6" fill="#f85149">8</tspan>
+<tspan x="860.8" fill="#6e7681">·</tspan>
+<tspan x="892.0" fill="#6e7681">🥞</tspan>
+<tspan x="938.8" fill="#6e7681">0</tspan>
+<tspan x="954.4" fill="#6e7681">.</tspan>
+<tspan x="970.0" fill="#6e7681">6</tspan>
+<tspan x="1001.2" fill="#6e7681">p</tspan>
+<tspan x="1016.8" fill="#6e7681">a</tspan>
+<tspan x="1032.4" fill="#6e7681">n</tspan>
+<tspan x="1048.0" fill="#6e7681">c</tspan>
+<tspan x="1063.6" fill="#6e7681">a</tspan>
+<tspan x="1079.2" fill="#6e7681">k</tspan>
+<tspan x="1094.8" fill="#6e7681">e</tspan>
+<tspan x="1126.0" fill="#6e7681">s</tspan>
+<tspan x="1141.6" fill="#6e7681">t</tspan>
+<tspan x="1157.2" fill="#6e7681">a</tspan>
+<tspan x="1172.8" fill="#6e7681">c</tspan>
+<tspan x="1188.4" fill="#6e7681">k</tspan>
+<tspan x="1204.0" fill="#6e7681">s</tspan>
+</text>
+<text y="217.2" font-size="26.0" xml:space="preserve">
+<tspan x="34.0" fill="#d59425">▌</tspan>
+<tspan x="65.2" fill="#6e7681">5</tspan>
+<tspan x="80.8" fill="#6e7681">h</tspan>
+<tspan x="112.0" fill="#5c6068">▏</tspan>
+<tspan x="127.6" fill="#55b449">█</tspan>
+<tspan x="143.2" fill="#82aa3b">█</tspan>
+<tspan x="158.8" fill="#aea12d">▉</tspan>
+<tspan x="174.4" fill="#787882">░</tspan>
+<tspan x="190.0" fill="#787882">░</tspan>
+<tspan x="205.6" fill="#787882">░</tspan>
+<tspan x="221.2" fill="#5c6068">▕</tspan>
+<tspan x="268.0" fill="#bd9e29">4</tspan>
+<tspan x="283.6" fill="#bd9e29">7</tspan>
+<tspan x="299.2" fill="#bd9e29">%</tspan>
+<tspan x="330.4" fill="#f85149">▲</tspan>
+<tspan x="361.6" fill="#6e7681">(</tspan>
+<tspan x="377.2" fill="#c9d1d9">2</tspan>
+<tspan x="392.8" fill="#c9d1d9">.</tspan>
+<tspan x="408.4" fill="#c9d1d9">5</tspan>
+<tspan x="424.0" fill="#c9d1d9">h</tspan>
+<tspan x="439.6" fill="#6e7681">)</tspan>
+<tspan x="470.8" fill="#6e7681">·</tspan>
+<tspan x="502.0" fill="#6e7681">7</tspan>
+<tspan x="517.6" fill="#6e7681">d</tspan>
+<tspan x="548.8" fill="#5c6068">▏</tspan>
+<tspan x="564.4" fill="#55b449">█</tspan>
+<tspan x="580.0" fill="#82aa3b">█</tspan>
+<tspan x="595.6" fill="#aea12d">█</tspan>
+<tspan x="611.2" fill="#d59425">▊</tspan>
+<tspan x="626.8" fill="#787882">░</tspan>
+<tspan x="642.4" fill="#787882">░</tspan>
+<tspan x="658.0" fill="#5c6068">▕</tspan>
+<tspan x="704.8" fill="#d98c29">6</tspan>
+<tspan x="720.4" fill="#d98c29">3</tspan>
+<tspan x="736.0" fill="#d98c29">%</tspan>
+<tspan x="767.2" fill="#f85149">▲</tspan>
+<tspan x="798.4" fill="#6e7681">(</tspan>
+<tspan x="814.0" fill="#c9d1d9">4</tspan>
+<tspan x="829.6" fill="#c9d1d9">.</tspan>
+<tspan x="845.2" fill="#c9d1d9">2</tspan>
+<tspan x="860.8" fill="#c9d1d9">d</tspan>
+<tspan x="876.4" fill="#6e7681">)</tspan>
+</text>
+</svg>

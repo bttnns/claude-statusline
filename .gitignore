@@ -1,0 +1,9 @@
+# runtime data this script writes
+ccstatus-daily.txt
+
+# python
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
