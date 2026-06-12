@@ -42,8 +42,12 @@ cp "$SRC/statusline.py" "$ENTRY"
 chmod +x "$ENTRY"
 
 # 3. Merge the statusLine block into settings.json (backup first).
+# Use a ~-relative command when the entry lives under $HOME so a tracked
+# settings.json stays portable across machines.
+CMD="$ENTRY"
+case "$ENTRY" in "$HOME"/*) CMD="~/${ENTRY#"$HOME"/}";; esac
 say "Updating $CLAUDE_DIR/settings.json"
-SETTINGS="$CLAUDE_DIR/settings.json" ENTRY="$ENTRY" python3 - <<'PY'
+SETTINGS="$CLAUDE_DIR/settings.json" ENTRY="$CMD" python3 - <<'PY'
 import json, os, shutil, time
 settings = os.environ["SETTINGS"]
 entry = os.environ["ENTRY"]
