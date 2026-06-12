@@ -149,18 +149,8 @@ def _layouts(flags, drop_order):
         yield dict(cur)
 
 
-def main():
-    now = int(time.time())
-    C = config.load()
-    S = session.read(sys.stdin)
-    S.NOW = now
-    S.COLS = detect_cols()
-    S.git = gitinfo.collect(S.DIR, S.SESSION)
-    S.SIN, S.SOUT, S.CACHE = usage.session_usage(S.TRANSCRIPT, S.SESSION, C.DAILY_FILE)
-    S.DAILY = usage.daily_total(C.DAILY_FILE)
-    S.tr = TrendTracker(S.SESSION, now, C.TR_WINDOW, C.TR_SPACING,
-                        C.TR_MINHIST, C.TR_RATEMIN).update(S.FIVE, S.WEEK, S.PCT)
-
+def render_text(S, C):
+    """Pick the richest layout that fits S.COLS, then draw it (wrap-safe)."""
     rows = None
     for flags in _layouts(C.FLAGS, C.DROP_ORDER):
         rows, width = compose(S, C, flags)
@@ -168,4 +158,22 @@ def main():
             break                                     # first layout that fits wins
     # If even the most-stripped layout overflows, render it anyway and let
     # trunc() in draw() cut each row: never change the row count.
-    print(draw(S, C, rows))
+    return draw(S, C, rows)
+
+
+def gather(S, C, now):
+    """Populate the dynamic fields on a parsed Session (git, usage, trend, width)."""
+    S.NOW = now
+    S.COLS = detect_cols()
+    S.git = gitinfo.collect(S.DIR, S.SESSION)
+    S.SIN, S.SOUT, S.CACHE = usage.session_usage(S.TRANSCRIPT, S.SESSION, C.DAILY_FILE)
+    S.DAILY = usage.daily_total(C.DAILY_FILE)
+    S.tr = TrendTracker(S.SESSION, now, C.TR_WINDOW, C.TR_SPACING,
+                        C.TR_MINHIST, C.TR_RATEMIN).update(S.FIVE, S.WEEK, S.PCT)
+    return S
+
+
+def main():
+    C = config.load()
+    S = gather(session.read(sys.stdin), C, int(time.time()))
+    print(render_text(S, C))

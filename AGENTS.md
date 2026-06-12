@@ -10,6 +10,8 @@ curl -fsSL https://raw.githubusercontent.com/bttnns/claude-statusline/main/insta
 From a local clone: `./install.sh`. Honor `CLAUDE_CONFIG_DIR` if set (defaults to `~/.claude`).
 
 ## Configure
+Easiest: `python3 statusline.py preset words` (writes the config for the user). Also `preview [name]` and `doctor`.
+
 Precedence: preset < config file < env var.
 - **Preset:** `CCSTATUS_PRESET=full|words|lean` (full = dense, words = plain English, lean = core).
 - **File:** `~/.claude/ccstatus.config`, one `KEY=VALUE` per line (keys are `CCSTATUS_*` names without the prefix), e.g. `PRESET=words`.

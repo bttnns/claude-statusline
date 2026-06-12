@@ -211,5 +211,30 @@ class EndToEnd(unittest.TestCase):
         self.assertIn('spent', words)
 
 
+class CLI(unittest.TestCase):
+    def _run(self, *args, **env):
+        e = dict(os.environ, CCSTATUS_DAILY_FILE='/tmp/ccstatus-cli-daily.txt', **env)
+        return subprocess.run([sys.executable, os.path.join(ROOT, 'statusline.py'), *args],
+                              capture_output=True, text=True, env=e)
+
+    def test_preview_renders_four_rows(self):
+        r = self._run('preview', 'words')
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertEqual(len(r.stdout.rstrip('\n').split('\n')), 4)
+        self.assertIn('context', strip(r.stdout))
+
+    def test_preset_writes_config(self):
+        cfg = os.path.join(tempfile.mkdtemp(), 'ccstatus.config')
+        r = self._run('preset', 'lean', CCSTATUS_CONFIG=cfg)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn('PRESET = lean', open(cfg).read())
+
+    def test_preset_rejects_garbage(self):
+        self.assertEqual(self._run('preset', 'bogus').returncode, 2)
+
+    def test_unknown_command(self):
+        self.assertEqual(self._run('frobnicate').returncode, 2)
+
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

@@ -38,6 +38,18 @@ Not everyone wants the same density. Set `CCSTATUS_PRESET` (or `PRESET=` in the 
 
 ![lean preset](demo-lean.png)
 
+## Use it
+
+The same file is also a tiny tool. Run it with a word to change the look. No need to edit any file.
+
+```sh
+statusline.py preset words     # pick a look: full, words, or lean
+statusline.py preview lean      # see a look right now
+statusline.py doctor            # is it set up right?
+```
+
+`preset` saves your pick. Start a new chat (or `/resume`) and it shows up.
+
 ## Config file
 
 Prefer a file to environment variables? Drop a `~/.claude/ccstatus.config` (override the path with `CCSTATUS_CONFIG`). One `KEY=VALUE` per line, `#` for comments. Keys are the `CCSTATUS_*` names without the prefix:
