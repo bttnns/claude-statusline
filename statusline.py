@@ -127,7 +127,7 @@ STAGED, MODIFIED, UNTRACKED = inum(STAGED), inum(MODIFIED), inum(UNTRACKED)
 AHEAD, BEHIND = inum(AHEAD), inum(BEHIND)
 
 # ---------- cross-session "tokens today" counter ----------
-DAILY_FILE = os.path.expanduser('~/.claude/ccstatus-daily.txt')
+DAILY_FILE = env('CCSTATUS_DAILY_FILE') or os.path.expanduser('~/.claude/ccstatus-daily.txt')
 def daily_total(add=0):
     """Today's running new-token total across all sessions; add `add` first if >0."""
     today = time.strftime('%Y%m%d')
@@ -505,7 +505,8 @@ def compact():
 # progressive shedding: drop the least essential detail until it fits.
 # The preset sets the starting flag set; lean begins already stripped to the core.
 if LEAN:
-    FLAGS = dict(treat=0, burn=0, cache=0, breakdown=0, today=0, gauges=1, pr=0, gitcounts=0, runway=0)
+    # lean strips to the core but keeps the fun treat (toggle it off with SHOW_TREAT=0)
+    FLAGS = dict(treat=1, burn=0, cache=0, breakdown=0, today=0, gauges=1, pr=0, gitcounts=0, runway=0)
 else:   # full and words start with everything; words renders it in plain English
     FLAGS = dict(treat=1, burn=1, cache=1, breakdown=1, today=1, gauges=not WORDS, pr=1, gitcounts=1, runway=1)
 DROP_ORDER = ['treat', 'burn', 'breakdown', 'gauges', 'pr', 'gitcounts', 'today', 'cache', 'runway']

@@ -2,7 +2,7 @@
 
 A frameless, information-dense status line for [Claude Code](https://claude.com/claude-code). One self-contained Python script, no dependencies, no Nerd Font required.
 
-![claude-statusline demo](demo.png)
+![claude-statusline heating up](demo.gif)
 
 It reads Claude Code's session JSON on stdin and renders four fixed rows: who and where you are, how full and costly the session is, how much it has worked, and how close you are to your usage limits.
 
