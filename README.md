@@ -54,26 +54,36 @@ Precedence is **preset < config file < environment variable**, so a `CCSTATUS_*`
 
 Requires Python 3 (no packages). Git is optional (the git segment just disappears outside a repo).
 
-1. Save `statusline.py` somewhere, e.g. `~/.claude/statusline.py`, and make it executable:
+### One-liner
 
-   ```sh
-   chmod +x ~/.claude/statusline.py
-   ```
+```sh
+curl -fsSL https://raw.githubusercontent.com/bttnns/claude-statusline/main/install.sh | bash
+```
 
-2. Point Claude Code at it in `~/.claude/settings.json`:
+This copies the package to `~/.claude/claude-statusline/` and merges the `statusLine` block into `~/.claude/settings.json` (your existing settings are preserved and a timestamped backup is written first). Start a new session, or `/resume`, and the line appears.
 
-   ```json
-   {
-     "statusLine": {
-       "type": "command",
-       "command": "~/.claude/statusline.py",
-       "padding": 1,
-       "refreshInterval": 10
-     }
-   }
-   ```
+### With Claude Code
 
-That's it. Start (or `/resume`) a session and the line appears.
+Just tell Claude Code, in any project:
+
+> Install the status line from github.com/bttnns/claude-statusline
+
+It will read `AGENTS.md` and run the installer for you.
+
+### Manual
+
+Copy the `ccstatus/` package and `statusline.py` to a directory (e.g. `~/.claude/claude-statusline/`), then point Claude Code at the entry script in `~/.claude/settings.json`:
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/claude-statusline/statusline.py",
+    "padding": 1,
+    "refreshInterval": 10
+  }
+}
+```
 
 ## Configuration
 
@@ -102,7 +112,29 @@ If the line is wider than the pane, it progressively sheds the least essential d
 
 ## Make it yours
 
-This is a single readable script. Don't like the snack treat, the runway, or the emoji? Delete the bit you don't want. The layout is built from small `build_*` segment functions near the bottom, and the palette is one block of `rgb()` constants near the top.
+`statusline.py` is a thin entry point; the logic lives in the `ccstatus/` package, one small library per concern:
+
+| Module | Responsibility |
+| --- | --- |
+| `palette` | colors, the green-to-red heat gradient, the 24-bit gauge |
+| `textutil` | number formatting, ANSI-aware width/truncation, terminal width |
+| `session` | parse Claude Code's session JSON from stdin |
+| `config` | resolve preset + config file + env into one settings object |
+| `gitinfo` | one cached `git status` into a small struct |
+| `usage` | incremental transcript token accounting + the daily counter |
+| `trend` | rate sampling, trend arrows, context runway projection |
+| `treats` | the cost-in-snacks "treat" data and picker |
+| `render` | segment builders, compose/draw, and `main()` |
+
+Don't like the snack treat, the runway, or the emoji? The layout is built from small `build_*` functions in `render.py`; the palette is one block of `rgb()` constants in `palette.py`.
+
+## Tests
+
+Pure stdlib `unittest`, no dependencies:
+
+```sh
+python3 -m unittest discover -s tests
+```
 
 ## License
 

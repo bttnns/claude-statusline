@@ -1,15 +1,13 @@
 # AGENTS.md
 
-For agents installing or tweaking **claude-statusline**. It is one Python 3 file, `statusline.py`, that reads Claude Code's session JSON on stdin and prints a 4-line dashboard. No deps.
+For agents installing or tweaking **claude-statusline**. `statusline.py` is a thin entry point Claude Code runs as its status line; the logic lives in the `ccstatus/` package (one library per concern). Reads session JSON on stdin, prints 4 lines. No deps.
 
 ## Install
+One command (copies the package to `~/.claude/claude-statusline/` and merges `settings.json`, backup first):
 ```sh
-cp statusline.py ~/.claude/statusline.py && chmod +x ~/.claude/statusline.py
+curl -fsSL https://raw.githubusercontent.com/bttnns/claude-statusline/main/install.sh | bash
 ```
-Then merge into `~/.claude/settings.json`:
-```json
-{ "statusLine": { "type": "command", "command": "~/.claude/statusline.py", "padding": 1, "refreshInterval": 10 } }
-```
+From a local clone: `./install.sh`. Honor `CLAUDE_CONFIG_DIR` if set (defaults to `~/.claude`).
 
 ## Configure
 Precedence: preset < config file < env var.
@@ -17,12 +15,16 @@ Precedence: preset < config file < env var.
 - **File:** `~/.claude/ccstatus.config`, one `KEY=VALUE` per line (keys are `CCSTATUS_*` names without the prefix), e.g. `PRESET=words`.
 - **Env:** any `CCSTATUS_*`. Full list is in the README config table.
 
-## Preview / verify
+## Verify / test
 ```sh
+python3 -m unittest discover -s tests
 echo '{"model":{"display_name":"Opus"},"context_window":{"used_percentage":42},"cost":{"total_cost_usd":1.23}}' | python3 statusline.py
 ```
+
+## Package map
+`palette` colors/gauge · `textutil` width+formatting · `session` parse JSON · `config` settings · `gitinfo` git · `usage` tokens · `trend` runway/arrows · `treats` snacks · `render` builders+main.
 
 ## Rules
 - Always emit exactly 4 rows and never let a line wrap; either breaks Claude Code's redraw.
 - For demos, point `CCSTATUS_DAILY_FILE` at a throwaway file. Never write the real `~/.claude/ccstatus-daily.txt`.
-- No em-dashes anywhere.
+- No em-dashes anywhere. Keep the tests green.
