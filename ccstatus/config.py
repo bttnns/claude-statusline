@@ -48,6 +48,10 @@ def load():
         except (TypeError, ValueError):
             return default
 
+    # Density. Switch it the easy way with the bundled CLI:
+    #   statusline.py preset full|words|lean
+    # which just writes PRESET= into the config file read above. Or set
+    # CCSTATUS_PRESET in the environment for a one-off override.
     preset = cfg('PRESET', 'full', str).strip().lower()
     if preset not in PRESETS:
         preset = 'full'

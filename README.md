@@ -26,7 +26,7 @@ Everything is colored by "heat": the left accent bar and the gauges shift from g
 
 ## Presets
 
-Not everyone wants the same density. Set `CCSTATUS_PRESET` (or `PRESET=` in the config file below) to one of three modes:
+Not everyone wants the same density. Switch with `statusline.py preset <name>` (see [Use it](#use-it)), or set `CCSTATUS_PRESET` / `PRESET=` in the config file. Three modes:
 
 **`full`** (default) - the dense, symbol-forward dashboard above.
 
